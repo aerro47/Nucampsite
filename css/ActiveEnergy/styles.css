@@ -1,3 +1,8 @@
+body {
+    font-family: "open sans", sans-serif;
+    background-image: url(https://s2.best-wallpaper.net/wallpaper/2560x1440/1611/Fruit-berries-raspberry-blackberry-strawberry-wood-board_2560x1440.jpg);
+}
+
 .jumbotron {
     margin: 0;
     padding: 30px;
@@ -5,3 +10,35 @@
     color: Black;
 }
 
+.navbar {
+    background-color: silver;
+}
+
+.row-content {
+    padding: 10px;
+}
+
+.carousel-caption {
+    background-color: rgba(0,0,0,0.5);
+}
+
+.carousel {
+    border: solid darkgreen;
+}
+
+#carouselButton {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+}
+
+.card-group{
+    border: 4px ridge darkgreen;
+}
+
+.site-footer {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: silver;
+}
