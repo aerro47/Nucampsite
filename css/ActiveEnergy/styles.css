@@ -42,3 +42,19 @@ body {
     padding: 20px;
     background-color: silver;
 }
+
+
+.address-info {
+    max-width: 75%;
+    border-radius: 25px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 10px;
+}
+
+#gmap_canvas {
+    border: 4px outset silver;
+}
+ .card-hours {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ }

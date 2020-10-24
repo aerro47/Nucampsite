@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+
+        <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
+        <link rel="stylesheet" href="css/ActiveEnergy/styles.css" />
+
+        <title>Active Energy</title>
+    </head>
+    <body>
+        <header class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-4 col-sm-3 col-md-2 align-self-center">
+                        <img src="img/Active Energy logo.png" class="img-fluid" alt="Logo for Active Energy" height="200"/>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <nav class="navbar navbar-expand-sm navbar-light sticky-top">
+            <div class="container">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="Activeenergy.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Ourmenu.html">Our Menu</a></li>
+                    <li class="nav-item-active"><a class="nav-link" href="#">Location</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Become a Distributor</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="container">
+            <div class="row row-content">
+                <div class="col-lg-9 col-xl-9">
+                    <div class="mapouter"><div class="gmap_canvas d-none d-sm-block"><iframe width="700" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=1573%20154th%20ave%20nw%20suite%20%23103%20andover%2C%20mn&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="2" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.whatismyip-address.com/divi-discount/"></a></div><style>.mapouter{position:relative;text-align:right;height:500px;width:800px;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:700px;}</style></div>
+                </div>
+                <div class="col col-sm-6 col-lg-3 col-xl-3">
+                    <div class="card card-hours text-center shadow-lg p-3 mb-5 bg-white rounded">
+                        <div class="card-header">
+                            <h3>Hours</h3>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Sunday<br>11 A.M. - 2 P.M.</li>
+                            <li class="list-group-item">Monday<br>6:30 A.M. - 5 P.M.</li>
+                            <li class="list-group-item">Tuesday<br>6:30 A.M. - 5 P.M.</li>
+                            <li class="list-group-item">Wednesday<br>6:30 A.M. - 5 P.M.</li>
+                            <li class="list-group-item">Thursday<br>6:30 A.M. - 5 P.M.</li>
+                            <li class="list-group-item">Friday<br>7 A.M. - 5 P.M.</li>
+                            <li class="list-group-item">Saturday<br>8 A.M. - 2 P.M.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mx-auto address-info">
+                <div class="col-sm-4">
+                    <h4>Address</h4>
+                    <address>
+                        1573 154th Ave NW<br>
+                        Suite #103<br>
+                        Andover, MN 55304<br>
+                        U.S.A.
+                    </address>
+                </div>
+                <div class="col-sm-4">
+                    <h4>Contact Information</h4>
+                    <a role="button" class="btn btn-link" href="tel:6514917615"><i class="fa fa-phone"></i> (651)491-7615</a>
+                </div>
+            </div>
+        </div>
+
+
+        <footer class="site-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col offset-2">
+                        <h5>Links</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="Activeenergy.html">Home</a></li>
+                            <li><a href="Ourmenu.html">Our Menu</a></li>
+                            <li><a href="#">Location</a></li>
+                            <li><a href="#">Become a Distributor</a></li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h5>Social</h5>
+                        <a class="btn btn-social-icon btn-twitter" href="https://twitter.com/b_activeenergy"><i class="fa fa-twitter"></i></a>
+                        <a class="btn btn-social-icon btn-facebook" href="https://b-m.facebook.com/Active-Energy-181432185206076/"><i class="fa fa-facebook"></i></a>
+                    </div>
+                    <div class="col">
+                        <h5>Contact</h5>
+
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+        <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+        <script>
+            $(function() {
+                $(".carousel").carousel( { interval: 2000} );
+                $("#carouselButton").click(function(){
+                    if ($("#carouselButton").children("i").hasClass("fa-pause")) {
+                        $(".carousel").carousel("pause");
+                        $("#carouselButton").children("i").removeClass("fa-pause");
+                        $("#carouselButton").children("i").addClass("fa-play");
+                    } else {
+                        $(".carousel").carousel("cycle");
+                        $("#carouselButton").children("i").removeClass("fa-play");
+                        $("#carouselButton").children("i").addClass("fa-pause");
+                    }
+                });
+            });
+        </script>
+
+    </body>
+</html>
