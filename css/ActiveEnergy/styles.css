@@ -29,6 +29,11 @@ li a:hover {
     border-radius: 4px;
 }
 
+.row {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
 .row-content {
     padding: 10px;
     color: black;
@@ -57,17 +62,8 @@ li a:hover {
     padding: 20px;
 }
 
-
-.address-info {
-    max-width: 75%;
-    border-radius: 25px;
-    background-color: white;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    padding: 10px;
-}
-
 #map {
-    height: 500px;
+    height: 400px;
     width: 100%;
 }
  .card-hours {
@@ -85,4 +81,31 @@ li a:hover {
      padding: 5px;
      font-size: 16pt;
      color: black;
+ }
+ .modal-content, .modal-list {
+     font-size: 18pt;
+     text-align: center;
+     background-color: black;
+ }
+
+ .modal-footer-button{
+    align-content: center;
+     background-color: #10f009;
+     font-size: 16pt;
+ }
+
+ #hours-button {
+    font-size: 18pt;
+    color: #10f009;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: black;
+ }
+
+ .fa {
+     color: black;
+ }
+
+ .fa:hover {
+    color: white;
  }
