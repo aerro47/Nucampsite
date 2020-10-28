@@ -1,6 +1,12 @@
 body {
-    font-family: "open sans", sans-serif;
-    background-image: url(https://s2.best-wallpaper.net/wallpaper/2560x1440/1611/Fruit-berries-raspberry-blackberry-strawberry-wood-board_2560x1440.jpg);
+    font-family: 'Amatic SC', cursive;
+    font-size: 14pt;
+    color: white;
+    background-image: url(/img/2560x1440\ Preview\ wallpaper\ dark\,\ spots\,\ texture\,\ background\ 2560x1440.jpg);
+}
+
+h1, h2 {
+    color: #10f009;
 }
 
 .jumbotron {
@@ -10,12 +16,22 @@ body {
     color: Black;
 }
 
-.navbar {
+.navbar, .nav-link {
+    font-size: 24pt;
     background-color: silver;
+    color: black;
+}
+
+li a:hover {
+    color: white;
+    padding-top: 0px;
+    border-bottom: solid white 4px;
+    border-radius: 4px;
 }
 
 .row-content {
     padding: 10px;
+    color: black;
 }
 
 .carousel-caption {
@@ -38,9 +54,7 @@ body {
 }
 
 .site-footer {
-    margin-top: 20px;
     padding: 20px;
-    background-color: silver;
 }
 
 
@@ -52,9 +66,23 @@ body {
     padding: 10px;
 }
 
-#gmap_canvas {
-    border: 4px outset silver;
+#map {
+    height: 500px;
+    width: 100%;
 }
  .card-hours {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ }
+
+ form {
+     margin: 10px;
+     padding: 20px;
+     border-radius: 3px;
+     background-color: white;
+ }
+
+ .form-label {
+     padding: 5px;
+     font-size: 16pt;
+     color: black;
  }

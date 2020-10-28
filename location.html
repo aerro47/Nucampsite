@@ -8,7 +8,7 @@
 
         <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
         <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap">
         <link rel="stylesheet" href="css/ActiveEnergy/styles.css" />
 
         <title>Active Energy</title>
@@ -24,22 +24,19 @@
             </div>
         </header>
 
-        <nav class="navbar navbar-expand-sm navbar-light sticky-top">
+        <nav class="navbar navbar-expand-sm sticky-top">
             <div class="container">
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item"><a class="nav-link" href="Activeenergy.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="Ourmenu.html">Our Menu</a></li>
                     <li class="nav-item-active"><a class="nav-link" href="#">Location</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Become a Distributor</a></li>
+                    <li class="nav-item"><a class="nav-link" href="distributorpage.html">Become a Distributor</a></li>
                 </ul>
             </div>
         </nav>
 
         <div class="container">
             <div class="row row-content">
-                <div class="col-lg-9 col-xl-9">
-                    <div class="mapouter"><div class="gmap_canvas d-none d-sm-block"><iframe width="700" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=1573%20154th%20ave%20nw%20suite%20%23103%20andover%2C%20mn&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="2" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.whatismyip-address.com/divi-discount/"></a></div><style>.mapouter{position:relative;text-align:right;height:500px;width:800px;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:700px;}</style></div>
-                </div>
                 <div class="col col-sm-6 col-lg-3 col-xl-3">
                     <div class="card card-hours text-center shadow-lg p-3 mb-5 bg-white rounded">
                         <div class="card-header">
@@ -75,6 +72,9 @@
             </div>
         </div>
 
+        <div id="map"></div>
+
+
 
         <footer class="site-footer">
             <div class="container">
@@ -85,7 +85,7 @@
                             <li><a href="Activeenergy.html">Home</a></li>
                             <li><a href="Ourmenu.html">Our Menu</a></li>
                             <li><a href="#">Location</a></li>
-                            <li><a href="#">Become a Distributor</a></li>
+                            <li><a href="distributorpage.html">Become a Distributor</a></li>
                         </ul>
                     </div>
                     <div class="col">
@@ -104,6 +104,7 @@
         <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
         <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
         <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDPddgBQMrkBPhkxnPTQIy3vrfOVfi-XEM&callback=initMap"></script>
 
         <script>
             $(function() {
@@ -120,6 +121,20 @@
                     }
                 });
             });
+
+            function initMap() {
+                const options = {
+                    zoom: 16,
+                    center:{lat:45.249868, lng:-93.305090}
+                }
+
+                const map = new google.maps.Map(document.getElementById('map'), options)
+
+                const marker = new google.maps.Marker({
+                    position: {lat:45.249868, lng:-93.305090},
+                    map:map
+                })
+            }
         </script>
 
     </body>
