@@ -66,9 +66,6 @@ li a:hover {
     height: 400px;
     width: 100%;
 }
- .card-hours {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
- }
 
  form {
      margin: 10px;
@@ -109,3 +106,17 @@ li a:hover {
  .fa:hover {
     color: white;
  }
+
+.menu-card {
+    margin: 20px 20px;
+    font-size: 16pt;
+    text-align: center;
+    border: 20px inset black ;
+    background-color: rgb(20, 20, 20);
+ }
+
+section, h3 {
+    margin: 5px;
+    text-align: center;
+    border-bottom: 1px solid;
+}
