@@ -27,14 +27,19 @@
         <nav class="navbar navbar-expand-sm sticky-top">
             <div class="container">
                 <div class="col-md-10">
-                    <ul class="navbar-nav offset-lg-4">
-                        <li class="nav-item"><a class="nav-link" href="Activeenergy.html">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="Ourmenu.html">Our Menu</a></li>
-                        <li class="nav-item-active"><a class="nav-link" href="#">Location</a></li>
-                        <li class="nav-item"><a class="nav-link" href="distributorpage.html">Become a Distributor</a></li>
-                    </ul>
+                    <div class="collapse navbar-collapse" id="activeEnergyNavbar">
+                        <ul class="navbar-nav offset-lg-4">
+                            <li class="nav-item"><a class="nav-link" href="Activeenergy.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="Ourmenu.html">Our Menu</a></li>
+                            <li class="nav-item-active"><a class="nav-link" href="#">Location</a></li>
+                            <li class="nav-item"><a class="nav-link" href="distributorpage.html">Become a Distributor</a></li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="col-sm-6 col-md-4 col-lg-4">
+                    <button class="navbar-toggler mr-5" type="button" data-toggle="collapse" data-target="#activeEnergyNavbar">
+                        <i class="fa fa-bars" style="color: black;"></i>
+                    </button>
                     #Social<a class="btn btn-social-icon ml-3" href="https://twitter.com/b_activeenergy"><i class="fa fa-twitter"></i></a>
                     <a class="btn btn-social-icon ml-0 mr-3" href="https://b-m.facebook.com/Active-Energy-181432185206076/"><i class="fa fa-facebook"></i></a>
                     <button type="button" class="btn" id="hours-button" data-toggle="modal" data-target="#hours-modal">Hours</button>
@@ -45,9 +50,7 @@
         <div class="modal fade" id="hours-modal">
             <div class="modal-dialog">
                 <div class="modal-content">
-                    <div class="modal-header">
-                        <h1 class="modal-title">Hours</h1>
-                    </div>
+                    <h1 class="my-4">Hours</h1>
                     <div class="modal-body">
                         <ul class="list-group list-group-flush">
                             <li class="list-group-item modal-list">Sunday<br>11 A.M. - 2 P.M.</li>
@@ -67,6 +70,9 @@
         </div>
 
         <div class="container">
+            <h1 class="my-3">Location</h1>
+            <div id="map"></div>
+
             <div class="row offset-2">
                 <div class="col">
                     <h2>Address</h2>
@@ -79,17 +85,16 @@
                 </div>
                 <div class="col">
                     <h2>Contact Information</h2>
-                    <a role="button" class="btn btn-link" href="tel:6514917615"><i class="fa fa-phone"></i> (651)491-7615</a>
+                    <a href="tel:6514917615"><i class="fa fa-phone" style="color: white; padding: 3px;"></i> (651)491-7615</a><br>
+                    <a href="email:info@activeenergy.com"><i class="fa fa-envelope" style="color: white; padding: 3px;"></i>info@activeenergy.com</a>
                 </div>
             </div>
         </div>
 
-        <div id="map"></div>
-
-        <footer class="site-footer">
+        <footer>
             <div class="container">
-                <div class="row">
-                    <div class="col offset-2">
+                <div class="row" style="text-align: center;">
+                    <div class="col">
                         <h5>Links</h5>
                         <ul class="list-unstyled">
                             <li><a href="Activeenergy.html">Home</a></li>
@@ -97,10 +102,6 @@
                             <li><a href="#">Location</a></li>
                             <li><a href="distributorpage.html">Become a Distributor</a></li>
                         </ul>
-                    </div>
-                    <div class="col">
-                        <h5>Contact</h5>
-
                     </div>
                 </div>
             </div>
@@ -112,25 +113,96 @@
         <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDPddgBQMrkBPhkxnPTQIy3vrfOVfi-XEM&callback=initMap"></script>
 
         <script>
-            $(function() {
-                $(".carousel").carousel( { interval: 2000} );
-                $("#carouselButton").click(function(){
-                    if ($("#carouselButton").children("i").hasClass("fa-pause")) {
-                        $(".carousel").carousel("pause");
-                        $("#carouselButton").children("i").removeClass("fa-pause");
-                        $("#carouselButton").children("i").addClass("fa-play");
-                    } else {
-                        $(".carousel").carousel("cycle");
-                        $("#carouselButton").children("i").removeClass("fa-play");
-                        $("#carouselButton").children("i").addClass("fa-pause");
-                    }
-                });
-            });
-
             function initMap() {
                 const options = {
-                    zoom: 16,
-                    center:{lat:45.249868, lng:-93.305090}
+                    zoom: 15,
+                    center:{lat:45.249868, lng:-93.305090},
+                    styles: [
+                        { elementType: "geometry", stylers: [{ color: "#242f3e" }] },
+                        {
+                        elementType: "labels.text.stroke",
+                        stylers: [{ color: "#242f3e" }],
+                        },
+                        {
+                        elementType: "labels.text.fill",
+                        stylers: [{ color: "#746855" }],
+                        },
+                        {
+                        featureType: "administrative.locality",
+                        elementType: "labels.text.fill",
+                        stylers: [{ color: "#d59563" }],
+                        },
+                        {
+                        featureType: "poi",
+                        elementType: "labels.text.fill",
+                        stylers: [{ color: "#d59563" }],
+                        },
+                        {
+                        featureType: "poi.park",
+                        elementType: "geometry",
+                        stylers: [{ color: "#263c3f" }],
+                        },
+                        {
+                        featureType: "poi.park",
+                        elementType: "labels.text.fill",
+                        stylers: [{ color: "#6b9a76" }],
+                        },
+                        {
+                        featureType: "road",
+                        elementType: "geometry",
+                        stylers: [{ color: "#38414e" }],
+                        },
+                        {
+                        featureType: "road",
+                        elementType: "geometry.stroke",
+                        stylers: [{ color: "#212a37" }],
+                        },
+                        {
+                        featureType: "road",
+                        elementType: "labels.text.fill",
+                        stylers: [{ color: "#9ca5b3" }],
+                        },
+                        {
+                        featureType: "road.highway",
+                        elementType: "geometry",
+                        stylers: [{ color: "#746855" }],
+                        },
+                        {
+                        featureType: "road.highway",
+                        elementType: "geometry.stroke",
+                        stylers: [{ color: "#1f2835" }],
+                        },
+                        {
+                        featureType: "road.highway",
+                        elementType: "labels.text.fill",
+                        stylers: [{ color: "#f3d19c" }],
+                        },
+                        {
+                        featureType: "transit",
+                        elementType: "geometry",
+                        stylers: [{ color: "#2f3948" }],
+                        },
+                        {
+                        featureType: "transit.station",
+                        elementType: "labels.text.fill",
+                        stylers: [{ color: "#d59563" }],
+                        },
+                        {
+                        featureType: "water",
+                        elementType: "geometry",
+                        stylers: [{ color: "#17263c" }],
+                        },
+                        {
+                        featureType: "water",
+                        elementType: "labels.text.fill",
+                        stylers: [{ color: "#515c6d" }],
+                        },
+                        {
+                        featureType: "water",
+                        elementType: "labels.text.stroke",
+                        stylers: [{ color: "#17263c" }],
+                        },
+                    ],
                 }
 
                 const map = new google.maps.Map(document.getElementById('map'), options)

@@ -27,14 +27,19 @@
         <nav class="navbar navbar-expand-sm sticky-top">
             <div class="container">
                 <div class="col-md-10">
-                    <ul class="navbar-nav offset-lg-4">
-                        <li class="nav-item"><a class="nav-link" href="Activeenergy.html">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="Ourmenu.html">Our Menu</a></li>
-                        <li class="nav-item"><a class="nav-link" href="location.html">Location</a></li>
-                        <li class="nav-item-active"><a class="nav-link" href="#">Become a Distributor</a></li>
-                    </ul>
+                    <div class="collapse navbar-collapse" id="activeEnergyNavbar">
+                        <ul class="navbar-nav offset-lg-4">
+                            <li class="nav-item"><a class="nav-link" href="Activeenergy.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="Ourmenu.html">Our Menu</a></li>
+                            <li class="nav-item"><a class="nav-link" href="location.html">Location</a></li>
+                            <li class="nav-item-active"><a class="nav-link" href="#">Become a Distributor</a></li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="col-sm-6 col-md-4 col-lg-4">
+                    <button class="navbar-toggler mr-5" type="button" data-toggle="collapse" data-target="#activeEnergyNavbar">
+                        <i class="fa fa-bars" style="color: black;"></i>
+                    </button>
                     #Social<a class="btn btn-social-icon ml-3" href="https://twitter.com/b_activeenergy"><i class="fa fa-twitter"></i></a>
                     <a class="btn btn-social-icon ml-0 mr-3" href="https://b-m.facebook.com/Active-Energy-181432185206076/"><i class="fa fa-facebook"></i></a>
                     <button type="button" class="btn" id="hours-button" data-toggle="modal" data-target="#hours-modal">Hours</button>
@@ -45,9 +50,7 @@
         <div class="modal fade" id="hours-modal">
             <div class="modal-dialog">
                 <div class="modal-content">
-                    <div class="modal-header">
-                        <h1 class="modal-title">Hours</h1>
-                    </div>
+                    <h1 class="my-4">Hours</h1>
                     <div class="modal-body">
                         <ul class="list-group list-group-flush">
                             <li class="list-group-item modal-list">Sunday<br>11 A.M. - 2 P.M.</li>
@@ -67,51 +70,76 @@
         </div>
 
         <div class="container">
-            <div class="row row-content">
-                <div class="col">
-                    <div class="card-deck">
-                        <div class="card profile-card">
-                          <img src="img/Photo needed.png" class="card-img-top" alt="Image of Bryan Spiess">
-                          <div class="card-body">
-                            <h5 class="card-title">Bryan Spiess</h5>
-                            <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta explicabo quae sequi eum nam autem ipsam labore laborum iusto modi corporis nemo, neque deleniti aspernatur illum. Est omnis incidunt debitis?</p>
-                            <a class="btn btn-success" role="button" href="https://accounts.myherbalife.com/Account/Create">Sign up with Bryan!</a>
-                          </div>
+            <h1>Meet The Team</h1>
+            <div class="container profile-card">
+                    <div class="col">
+                        <div class="card">
+                            <div class="face face1">
+                                <div class="content">
+                                    <img src="img/picture of brian.jpg" alt="Picture of Brian">
+                                    <h4>Brian</h4>
+                                </div>
+                            </div>
+                            <div class="face face2">
+                                <div class="content">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat veritatis rerum ipsum quidem odio quod!</p>
+                                    <a href="https://accounts.myherbalife.com/Account/Create">Sign up with Brian!</a>
+                                </div>
+                            </div>
                         </div>
-                        <div class="card profile-card">
-                          <img src="img/Photo needed.png" class="card-img-top" alt="Image of John Johnson">
-                          <div class="card-body">
-                            <h5 class="card-title">John Johnson</h5>
-                            <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore laborum eos quis provident, ad iure assumenda consectetur tempora veniam dolorum vitae illum! Voluptate asperiores velit neque id reprehenderit soluta perferendis.</p>
-                            <a class="btn btn-success" role="button" href="https://accounts.myherbalife.com/Account/Create">Sign up with John!</a>
-                          </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card">
+                            <div class="face face1">
+                                <div class="content">
+                                    <img src="img/picture of john.jpg" alt="Picture of John">
+                                    <h4>John</h4>
+                                </div>
+                            </div>
+                            <div class="face face2">
+                                <div class="content">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat veritatis rerum ipsum quidem odio quod!</p>
+                                    <a href="https://accounts.myherbalife.com/Account/Create">Sign up with John!</a>
+                                </div>
+                            </div>
                         </div>
-                        <div class="card profile-card">
-                          <img src="img/Photo needed.png" class="card-img-top" alt="Image of Andy Johnson">
-                          <div class="card-body">
-                            <h5 class="card-title">Andy Johnson</h5>
-                            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci reiciendis harum, repellat fugiat vero expedita rerum molestiae illum, doloremque eveniet eligendi soluta inventore debitis veritatis assumenda quo voluptatem. Deserunt, non?</p>
-                            <a class="btn btn-success" role="button" href="https://accounts.myherbalife.com/Account/Create">Sign up with Andy!</a>
-                          </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card">
+                            <div class="face face1">
+                                <div class="content">
+                                    <img src="img/picture of andy.jpg" alt="Picture of Andy">
+                                    <h4>Andy</h4>
+                                </div>
+                            </div>
+                            <div class="face face2">
+                                <div class="content">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat veritatis rerum ipsum quidem odio quod!</p>
+                                    <a href="https://accounts.myherbalife.com/Account/Create">Sign up with Andy!</a>
+                                </div>
+                            </div>
                         </div>
-                      </div>
+                    </div>
                 </div>
-            </div>
 
             <form>
                 <h2>Ask Us Your Questions!</h2>
                 <div class="row">
                     <div class="col">
-                        <input type="text" class="form-control form-control-lg" placeholder="First name">
+                        <label class="form-check-label" for="first name">First Name</label>
+                        <input type="text" class="form-control form-control-lg" id="first name" placeholder="First name">
                     </div>
                     <div class="col">
-                      <input type="text" class="form-control form-control-lg" placeholder="Last name">
+                    <label class="form-check-label" for="last name">Last Name</label>
+                      <input type="text" class="form-control form-control-lg" id="last name" placeholder="Last name">
                     </div>
                   </div>
                   <div class="row">
                       <div class="col">
                         <div class="form-group">
-                            <label class="form-label" for="email">Email</label>
+                            <label for="email">Email</label>
                             <input type="email" class="form-control form-control-lg" id="email" placeholder="Email">
                         </div>
                     </div>
@@ -120,13 +148,13 @@
                       <div class="col">
                         <div class="form-check form-check-inline">
                             <input class="form-check-input" type="checkbox" value="becoming a distributor" id="becoming a distributor">
-                            <label class="form-check-label form-label" for="becoming a distributor">
+                            <label class="form-check-label" for="becoming a distributor">
                               Becoming a Distributor
                             </label>
                         </div>
                         <div class="form-check form-check-inline">
                             <input class="form-check-input" type="checkbox" value="general" id="general">
-                            <label class="form-check-label form-label" for="general">
+                            <label class="form-check-label" for="general">
                               General Questions & Concerns
                             </label>
                         </div>
@@ -135,8 +163,8 @@
                   <div class="row">
                       <div class="col">
                           <div class="form-group">
-                              <label class="form-label" for="text area">Message</label>
-                              <textarea class="form-control form-control-lg" id="text area" rows="6" placeholder="Your questions here!"></textarea>
+                              <label for="text area">Message</label>
+                              <textarea class="form-control form-control-lg" id="text area" rows="4" placeholder="Your questions here!"></textarea>
                           </div>
                       </div>
                   </div>
@@ -148,7 +176,7 @@
             </form>
         </div>
 
-        <footer class="site-footer">
+        <footer>
             <div class="container">
                  <div class="row">
                     <div class="col offset-2">
@@ -162,7 +190,8 @@
                     </div>
                     <div class="col">
                         <h5>Contact</h5>
-
+                        <a href="tel:6514917615"><i class="fa fa-phone" style="color: white; padding: 3px;"></i> (651)491-7615</a><br>
+                        <a href="email:info@activeenergy.com"><i class="fa fa-envelope" style="color: white; padding: 3px;"></i>info@activeenergy.com</a>
                     </div>
                 </div>
             </div>

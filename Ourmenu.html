@@ -27,14 +27,19 @@
         <nav class="navbar navbar-expand-sm sticky-top">
             <div class="container">
                 <div class="col-md-10">
-                    <ul class="navbar-nav offset-lg-4">
-                        <li class="nav-item"><a class="nav-link" href="Activeenergy.html">Home</a></li>
-                        <li class="nav-item-active"><a class="nav-link" href="#">Our Menu</a></li>
-                        <li class="nav-item"><a class="nav-link" href="location.html">Location</a></li>
-                        <li class="nav-item"><a class="nav-link" href="distributorpage.html">Become a Distributor</a></li>
-                    </ul>
+                    <div class="collapse navbar-collapse" id="activeEnergyNavbar">
+                        <ul class="navbar-nav offset-lg-4">
+                            <li class="nav-item"><a class="nav-link" href="Activeenergy.html">Home</a></li>
+                            <li class="nav-item-active"><a class="nav-link" href="#">Our Menu</a></li>
+                            <li class="nav-item"><a class="nav-link" href="location.html">Location</a></li>
+                            <li class="nav-item"><a class="nav-link" href="distributorpage.html">Become a Distributor</a></li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="col-sm-6 col-md-4 col-lg-4">
+                    <button class="navbar-toggler mr-5" type="button" data-toggle="collapse" data-target="#activeEnergyNavbar">
+                        <i class="fa fa-bars" style="color: black;"></i>
+                    </button>
                     #Social<a class="btn btn-social-icon ml-3" href="https://twitter.com/b_activeenergy"><i class="fa fa-twitter"></i></a>
                     <a class="btn btn-social-icon ml-0 mr-3" href="https://b-m.facebook.com/Active-Energy-181432185206076/"><i class="fa fa-facebook"></i></a>
                     <button type="button" class="btn" id="hours-button" data-toggle="modal" data-target="#hours-modal">Hours</button>
@@ -45,9 +50,7 @@
         <div class="modal fade" id="hours-modal">
             <div class="modal-dialog">
                 <div class="modal-content">
-                    <div class="modal-header">
-                        <h1 class="modal-title">Hours</h1>
-                    </div>
+                    <h1 class="my-4">Hours</h1>
                     <div class="modal-body">
                         <ul class="list-group list-group-flush">
                             <li class="list-group-item modal-list">Sunday<br>11 A.M. - 2 P.M.</li>
@@ -107,7 +110,7 @@
                       </div>
                 </div>
 
-            <section>
+            <section class="my-5">
             <h2>Pick a Flavor</h2>
                 <div class="row">
                     <div class="col">
@@ -200,15 +203,22 @@
             <h2>Our Ingredients</h2>
             <div class="row row-content">
                 <div class="col">
-                    <div class="card mb-3 border-secondary" style="max-width: 800px;">
-                        <div class="row no-gutters">
+                    <div class="card menu-card">
+                        <div class="row">
                           <div class="col-md-4">
-                            <img src="img/Formula1-Herbalife-image.png" class="card-img d-none d-md-block" alt="Image of formula one">
+                            <img src="img/Formula1-Herbalife-image.png" class="card-img d-none d-md-block mx-3" alt="Image of formula one">
                           </div>
                           <div class="col-md-8">
                             <div class="card-body">
                               <h5 class="card-title">Formula One</h5>
-                              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis fugiat exercitationem quam aliquam. Fugit, dolorem dolore. Quam dolor doloremque, ipsam mollitia, veniam repellendus voluptatibus vel provident maiores perspiciatis, impedit expedita.</p>
+                              <p class="card-text">Treat your body to a healthy, balanced meal in no time! Not only are these shakes easy to make, they’re also delicious. With up to 21 essential vitamins and minerals – and in a variety of flavors – weight management never tasted so good! Part of the Herbalife Nutrition.</p>
+                              <h5 class="card-subtitle">Key Benefits</h5>
+                              <ul style="text-align: left;">
+                                  <li>A healthy meal with up to 21 vitamins and minerals and essential nutrients.</li>
+                                  <li>9 g of protein and fiber help support weight management.</li>
+                                  <li>0 cholesterol; 0 trans fats</li>
+                                  <li>Formula 1 gives you protein and balanced nutrition.</li>
+                              </ul>
                             </div>
                           </div>
                         </div>
@@ -218,15 +228,21 @@
             
             <div class="row row-content align-self-center">
                 <div class="col">
-                    <div class="card mb-3 border-secondary" style="max-width: 800px;">
-                        <div class="row no-gutters">
+                    <div class="card menu-card">
+                        <div class="row">
                           <div class="col-md-4">
-                            <img src="img/PDM image.jpg" class="card-img d-none d-md-block" alt="Image of PDM">
+                            <img src="img/PDM image.jpg" class="card-img d-none d-md-block mx-3" alt="Image of PDM">
                           </div>
                           <div class="col-md-8">
                             <div class="card-body">
                               <h5 class="card-title">Protein Drink Mix</h5>
-                              <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa nostrum, illum iusto ipsa neque ullam veniam dolorum iure similique eaque facilis? A corrupti aperiam quibusdam minima assumenda aspernatur at dolorum.</p>
+                              <p class="card-text">Satisfy your hunger and stay energized with the power of protein! Add Protein Drink Mix to your favorite Formula 1 shake to boost your protein intake to 24 g (without the addition of milk) or mix with water for a nutritious protein snack.</p>
+                              <h5 class="card-subtitle">Key Benefits</h5>
+                              <ul style="text-align: left;">
+                                  <li>24 vitamins and minerals.</li>
+                                  <li>15 g of soy protein per serving.</li>
+                                  <li>5 g of carbs per serving.</li>
+                              </ul>
                             </div>
                           </div>
                         </div>
@@ -235,7 +251,7 @@
             </div>
         </div>
 
-        <footer class="site-footer">
+        <footer>
             <div class="container">
                 <div class="row">
                     <div class="col offset-2">
@@ -250,7 +266,8 @@
 
                     <div class="col">
                         <h5>Contact</h5>
-
+                        <a href="tel:6514917615"><i class="fa fa-phone" style="color: white; padding: 3px;"></i> (651)491-7615</a><br>
+                        <a href="email:info@activeenergy.com"><i class="fa fa-envelope" style="color: white; padding: 3px;"></i>info@activeenergy.com</a>
                     </div>
                 </div>
             </div>
